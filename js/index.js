@@ -20,14 +20,6 @@ function calculateAll() {
     .reduce((a,b) => a+b, 0);
 
   return total
-
-
-  let priceAllProducts = document.querySelectorAll('.price span');
-  return [...priceAllProducts]
-           .map(element => {
-              return Number(element.innerHTML)
-            })
-           .reduce((a,b) => a+b, 0);
 }
 
 // ITERATION 3
