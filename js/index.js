@@ -10,7 +10,6 @@ function updateSubtotal(product) {
  return subtotalElement.innerHTML = subtotal;
 }
 
-
 function calculateAll() {
   const productDomElements = [...document.querySelectorAll('.product')];
   let total = productDomElements
