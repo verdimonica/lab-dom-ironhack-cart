@@ -12,6 +12,16 @@ function updateSubtotal(product) {
 updateSubtotal(document);
 
 function calculateAll() {
+  const productDomElements = [...document.querySelectorAll('.product')];
+  let total = productDomElements
+    .map(product => {
+      return updateSubtotal(product);
+    })
+    .reduce((a,b) => a+b, 0);
+
+  return total
+
+
   let priceAllProducts = document.querySelectorAll('.price span');
   return [...priceAllProducts]
            .map(element => {
