@@ -19,10 +19,11 @@ function calculateAll() {
     })
     .reduce((a,b) => a+b, 0);
 
+    document.querySelector('#total-value span').innerHTML = total
   return total
 }
 
-// ITERATION 3
+
 
 // ITERATION 4
 
